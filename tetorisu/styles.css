@@ -1,0 +1,74 @@
+﻿/* 全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* タイトル部分 */
+#gameTitle {
+  font-size: 50px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* ゲームキャンバス */
+#container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#cvs {
+  border: 3px solid #000;
+}
+
+/* 音楽ボタン */
+.audio_wrap {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+#audioButton {
+  padding: 15px 25px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#audioButton:hover {
+  background-color: #0b7dda;
+}
+
+/* 中断ボタン・やり直しボタン */
+#buttons {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  z-index: 100;
+}
+
+#pauseButton, #restartButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#pauseButton:hover, #restartButton:hover {
+  background-color: #45a049;
+}
